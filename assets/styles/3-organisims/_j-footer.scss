@@ -16,6 +16,9 @@ footer {
        	justify-content: space-between;
       	width: 100%;
 			height: auto;
+			@include tablet{
+				flex-wrap: wrap;
+			}
 			 
 			.footer-first-content{
 				display: flex;
@@ -23,6 +26,9 @@ footer {
 				width: 31%;
 				height: auto;
 				padding-right: 32px;
+				@include tablet{
+					width: 40%;
+				}
 
 				.footer-logos{
 					display: flex;
@@ -55,6 +61,9 @@ footer {
 				padding-top: 8px;
 				padding-left: 32px;
 				padding-right: 16px;
+				@include tablet{
+					width: 30%;
+				}
 
 				a{
 					font-size: 14px;
