@@ -18,6 +18,10 @@ footer {
 			height: auto;
 			@include tablet{
 				flex-wrap: wrap;
+				padding-left: 64px;
+			}
+			@include mobile{
+				padding: 0;
 			}
 			 
 			.footer-first-content{
@@ -27,7 +31,15 @@ footer {
 				height: auto;
 				padding-right: 32px;
 				@include tablet{
-					width: 40%;
+					width: 50%;
+					padding-right: 48px;
+				}
+				@include mobile{
+					align-items: center;
+					width: 100%;
+					text-align: center;
+					padding: 0;
+					margin-bottom: 16px;
 				}
 
 				.footer-logos{
@@ -53,6 +65,10 @@ footer {
 				width: 1px;    
 				margin: 0; 	 
 				background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+
+				@include mobile{
+					display: none;
+				}
 			}
 			.footer-first-list{
 				display: flex;
@@ -62,9 +78,21 @@ footer {
 				padding-left: 32px;
 				padding-right: 16px;
 				@include tablet{
-					width: 30%;
+					width: 49.8%;
+					padding-left: 64px;
+					margin-bottom: 24px;
 				}
-
+				@include mobile{
+					align-items: center;
+					width: 100%;
+					text-align: center;
+					padding: 0;
+				}
+				h3{
+					@include mobile{
+						margin-bottom: 8px;
+					}
+				}
 				a{
 					font-size: 14px;
 					margin-bottom: 10px;
@@ -78,7 +106,22 @@ footer {
 				padding-left: 48px;
 				padding-right: 24px;
 				padding-top: 8px;
-
+				@include tablet{
+					width: 49.8%;
+					padding-left: 64px;
+				}
+				@include mobile{
+					align-items: center;
+					width: 100%;
+					text-align: center;
+					padding: 0;
+					margin-bottom: 24px;
+				}
+				h3{
+					@include mobile{
+						margin-bottom: 8px;
+					}
+				}
 				a{
 					font-size: 14px;
 					margin-bottom: 10px;
@@ -91,7 +134,22 @@ footer {
 				width: 19%;
 				padding-left: 32px;
 				padding-top: 8px;
-
+				@include tablet{
+					width: 49.8%;
+					padding-left: 64px;
+				}
+				@include mobile{
+					align-items: center;
+					width: 100%;
+					text-align: center;
+					padding: 0;
+					margin-bottom: 24px;
+				}
+				h3{
+					@include mobile{
+						margin-bottom: 8px;
+					}
+				}
 				a{
 					font-size: 14px;
 					margin-bottom: 10px;
@@ -109,6 +167,10 @@ footer {
 			height: auto;
 			margin-top: 24px;
 			padding-bottom: 16px;
+			@include mobile{
+				flex-direction: column;
+				text-align: center;
+			}
 
 			p{
 				font-size: 14px;
@@ -122,6 +184,10 @@ footer {
 
 				img{
 					margin-left: 16px;
+					@include mobile{
+						margin-right: 8px;
+						margin-left: 8px;
+					}
 				}
 			}
 		}
