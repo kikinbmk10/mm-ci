@@ -1,61 +1,131 @@
-.main-contact-content{
+.contact{
     display: flex;
-    width: 100%;
     justify-content: space-between;
-    padding-bottom: 32px;
-    @include tablet{
-        flex-direction: column;
-        align-items: center;
-    }
-    @include mobile{
-        flex-direction: column;
-        align-items: center;
-    }
-    form{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        @include tablet{
-            width: 90%;
-            margin-bottom: 48px;
-        }
-        @include mobile{
-            width: 95%;
-            margin-bottom: 48px;
-        }
-        button{
-            max-width: 100%;
-            letter-spacing: 4px;
-        }
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    padding-top: 72px;
+    border-top: 1px solid black;
 
-    }
-    .information-content{
-        width: 47%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        @include tablet{
-            width: 90%;
+    .accordion{
+        .half-accordion{
+           display: flex;
+           flex-direction: column;
+           width: 38%;
         }
-        @include mobile{
-            width: 95%;
+        /* Acordeon styles */
+        .tab {
+           position: relative;
+           margin-bottom: 12px;
+           width: 100%;
+           color: #fff;
+           overflow: hidden;
         }
-        .p-img-left{
-            margin: 24px 0;
-            @include mobile{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                
-            }
-            img{
-                max-width: 23%;
-                @include mobile{
-                    margin-right: 0;
+        input {
+           position: absolute;
+           opacity: 0;
+           z-index: -1;
+        }
+        label {
+           position: relative;
+           display: block;
+           background: #16a085;
+           font-weight: normal;
+           font-size: 20px;
+           margin-bottom: 0;
+           cursor: pointer;
+           padding-top: 16px;
+           padding-bottom: 16px;
+           padding-left: 40px;
+        }
+        .top-label{
+            padding-top: 8px;
+            padding-bottom: 0;
+        }
+        .sublabel{
+            padding-top: 0px;
+            padding-bottom: 8px;
+        }
+        .blue label {
+           background: #2980b9;
+        }
+        .tab-content {
+           max-height: 0;
+           overflow: hidden;
+           padding-left: 40px;
+           padding-right: 16px;
+           border-right: 1px solid gray;
+           border-bottom: 1px solid gray;
+           border-left: 1px solid gray;
+           background: #fff;
+           -webkit-transition: max-height .35s;
+           -o-transition: max-height .35s;
+           transition: max-height .35s;
+
+           h4{
+               font-size: 18px;
+               margin-top: 40px;
+               a{
+                   color: orange;
+               }
+           }
+           .h4-second{
+               margin-top: 0;
+           }
+           .info-content{
+               display: flex;
+               flex-wrap: nowrap;
+
+               .info-icon{
+                   margin-right: 24px;
+                   img{
+                       margin-bottom: 0;
+                   }
+               }
+               .info-text{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 24px;
+                    p{
+                        letter-spacing: 0;
+                        margin-bottom: 8px;
+                    }
                 }
-            }
+           }
+           .info-content:last-child{
+               margin-bottom: 16px;
+           }
         }
+        .blue .tab-content {
+           background: #fff;
+        }
+        
+        /* :checked */
+        input:checked ~ .tab-content {
+           max-height: 100em;
+        }
+        /* Icon */
+        label::after {
+           position: absolute;
+           right: 0;
+           top: 0;
+           display: block;
+           width: 3em;
+           height: 3em;
+           line-height: 3;
+           text-align: center;
+           -webkit-transition: all .35s;
+           -o-transition: all .35s;
+           transition: all .35s;
+        }
+          
+          input[type=radio] + label::after {
+            content: "\25BC";
+          }
+          
+          input[type=radio]:checked + label::after {
+            transform: rotateX(180deg);
+          }
+          
     }
 }
