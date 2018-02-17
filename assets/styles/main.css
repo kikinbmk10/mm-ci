@@ -426,10 +426,6 @@ button, .btn-solid {
 
 form {
   display: flex; }
-  form fieldset {
-    width: 100%;
-    display: flex;
-    flex-direction: column; }
 
 label {
   margin-bottom: 8px;
@@ -438,63 +434,55 @@ label {
     margin-left: 8px;
     font-weight: 300; }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; }
+
 input[type=text],
 input[type=email],
 input[type=search],
+input[type=number],
 input[type=tel],
 input[type=url],
 input[type=password],
 textarea, select {
+  position: relative;
   min-width: 100%;
   width: 100%;
   overflow: hidden;
   background-color: transparent;
   padding-top: 2px;
-  padding-left: 8px;
-  margin-bottom: 16px;
-  border: solid 1px #d9d9d9;
-  border-radius: 4px;
+  padding-bottom: 8px;
+  padding-left: 0;
+  margin-bottom: 40px;
+  border: solid 1px black;
   text-align: left;
   font-size: 16px;
   font-weight: 300;
   color: #414042;
+  border-top: none;
+  border-right: none;
+  border-left: none;
   -webkit-transition: border-color 400ms ease-in-out;
   transition: border-color 400ms ease-in-out; }
   input[type=text]:focus,
   input[type=email]:focus,
   input[type=search]:focus,
+  input[type=number]:focus,
   input[type=tel]:focus,
   input[type=url]:focus,
   input[type=password]:focus,
   textarea:focus, select:focus {
     outline: none; }
-  input[type=text]:active, input[type=text]:focus, input[type=text]:visited,
-  input[type=email]:active,
-  input[type=email]:focus,
-  input[type=email]:visited,
-  input[type=search]:active,
-  input[type=search]:focus,
-  input[type=search]:visited,
-  input[type=tel]:active,
-  input[type=tel]:focus,
-  input[type=tel]:visited,
-  input[type=url]:active,
-  input[type=url]:focus,
-  input[type=url]:visited,
-  input[type=password]:active,
-  input[type=password]:focus,
-  input[type=password]:visited,
-  textarea:active,
-  textarea:focus,
-  textarea:visited, select:active, select:focus, select:visited {
-    border-bottom-color: #FFF; }
 
 select {
-  border: none; }
-  select:focus {
-    outline: none; }
-  select:active, select:focus, select:visited {
-    border-bottom-color: #FFF; }
+  color: grey; }
+
+select:focus {
+  color: black; }
 
 input[type=file] {
   margin-bottom: 16px;
@@ -1143,7 +1131,9 @@ img {
         padding-right: 24px;
         padding-bottom: 18px;
         padding-left: 24px;
+        margin-bottom: 16px;
         background: #fff;
+        border: none;
         border-radius: 0; }
         @media screen and (max-width: 600px) {
           .banner .banner-content form input {
@@ -1216,20 +1206,19 @@ header.main-nav {
   padding-right: 16px;
   padding-left: 16px;
   margin: 0 auto;
-  padding-top: 16px;
+  padding-top: 0;
   padding-bottom: 16px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center; }
-  header.main-nav a {
+  header.main-nav .header-info {
     display: flex;
-    justify-content: center;
-    align-items: center; }
-    header.main-nav a svg {
-      width: 160px; }
-      header.main-nav a svg .logo-fill {
-        fill: #59595B; }
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: cyan; }
   @media screen and (max-width: 992px) {
     header.main-nav nav {
       display: none; } }
@@ -1706,15 +1695,28 @@ footer {
   width: 100%;
   height: auto;
   padding-top: 72px;
+  margin-bottom: 56px;
   border-top: 1px solid black; }
+  @media screen and (max-width: 600px) {
+    .contact {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; } }
   .contact .accordion {
+    width: 40%;
     /* Acordeon styles */
     /* :checked */
     /* Icon */ }
+    @media screen and (max-width: 900px) {
+      .contact .accordion {
+        width: 49%; } }
+    @media screen and (max-width: 600px) {
+      .contact .accordion {
+        width: 100%; } }
     .contact .accordion .half-accordion {
       display: flex;
       flex-direction: column;
-      width: 38%; }
+      width: 100%; }
     .contact .accordion .tab {
       position: relative;
       margin-bottom: 12px;
@@ -1733,17 +1735,21 @@ footer {
       font-size: 20px;
       margin-bottom: 0;
       cursor: pointer;
-      padding-top: 16px;
-      padding-bottom: 16px;
+      padding-top: 14px;
+      padding-bottom: 12px;
       padding-left: 40px; }
+      @media screen and (max-width: 600px) {
+        .contact .accordion label {
+          font-size: 17px;
+          padding-left: 24px; } }
     .contact .accordion .top-label {
-      padding-top: 8px;
+      padding-top: 6px;
       padding-bottom: 0; }
     .contact .accordion .sublabel {
       padding-top: 0px;
-      padding-bottom: 8px; }
+      padding-bottom: 6px; }
     .contact .accordion .blue label {
-      background: #2980b9; }
+      background: gray; }
     .contact .accordion .tab-content {
       max-height: 0;
       overflow: hidden;
@@ -1773,16 +1779,19 @@ footer {
         .contact .accordion .tab-content .info-content .info-text {
           display: flex;
           flex-direction: column;
-          margin-bottom: 24px; }
+          margin-bottom: 28px; }
           .contact .accordion .tab-content .info-content .info-text p {
             letter-spacing: 0;
-            margin-bottom: 8px; }
+            margin-bottom: 0;
+            line-height: 1.8; }
       .contact .accordion .tab-content .info-content:last-child {
-        margin-bottom: 16px; }
+        margin-bottom: 8px; }
     .contact .accordion .blue .tab-content {
       background: #fff; }
     .contact .accordion input:checked ~ .tab-content {
       max-height: 100em; }
+    .contact .accordion input:checked ~ label {
+      background: #2980b9; }
     .contact .accordion label::after {
       position: absolute;
       right: 0;
@@ -1799,5 +1808,58 @@ footer {
       content: "\25BC"; }
     .contact .accordion input[type=radio]:checked + label::after {
       transform: rotateX(180deg); }
+  .contact .contact-content {
+    display: flex;
+    flex-direction: column;
+    width: 51%;
+    height: auto; }
+    @media screen and (max-width: 900px) {
+      .contact .contact-content {
+        width: 49%; } }
+    @media screen and (max-width: 600px) {
+      .contact .contact-content {
+        width: 100%;
+        margin-top: 40px; } }
+    .contact .contact-content h2 {
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 0;
+      margin-bottom: 0px; }
+    .contact .contact-content .contact-form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin-top: 40px; }
+      .contact .contact-content .contact-form .input-content {
+        position: relative; }
+      .contact .contact-content .contact-form .contact-textarea {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 16px; }
+        .contact .contact-content .contact-form .contact-textarea textarea {
+          padding-left: 8px;
+          border: 1px solid black; }
+        .contact .contact-content .contact-form .contact-textarea label {
+          color: gray; }
+      .contact .contact-content .contact-form button {
+        align-self: flex-start;
+        width: auto;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 16px;
+        padding-right: 32px;
+        padding-bottom: 12px;
+        padding-left: 32px;
+        margin-top: 24px;
+        background: red;
+        border-radius: 25px; }
+        @media screen and (max-width: 600px) {
+          .contact .contact-content .contact-form button {
+            align-self: center;
+            margin-top: 0; } }
 
 /*# sourceMappingURL=main.css.map */
