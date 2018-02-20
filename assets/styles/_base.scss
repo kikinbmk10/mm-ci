@@ -13,7 +13,7 @@ body {
   text-rendering: optimizeLegibility;
   letter-spacing: 1px;
   line-height: 1.5;
-  margin-top: 81px;
+  margin-top: 176px;
   @include mobile{
     margin-top: 62px;
   }
@@ -165,4 +165,8 @@ hr.right {
 //margins
 .margin-48{
   margin-top: 48px;
+}
+//active
+.active-menu{
+  color: orange;
 }

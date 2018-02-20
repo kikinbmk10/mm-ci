@@ -22,37 +22,101 @@
   <div class="header-container">
     <header class="main-nav">
       <div class="header-info">
-        <div class="company-info">
-          <div class="company-info-box">
-            <img src="https://dummyimage.com/16x16/000/fff" alt="">
-            <a href="tel:+420572434290">+420 572 434 290</a>
+        <div class="header-info-content">
+          <div class="company-info">
+            <div class="company-info-box">
+              <img src="https://dummyimage.com/16x16/000/fff" alt="">
+              <a href="tel:+420572434290">+420 572 434 290</a>
+            </div>
+            <p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+            <div class="company-info-box">
+              <img src="https://dummyimage.com/16x16/000/fff" alt="">
+              <a href="mailto:sales@MMCITE.cz">SALES@MMCITE.CZ</a>
+            </div>
           </div>
-          <p>|</p>
-          <div class="company-info-box"></div>
+          <div class="company-register">
+            <div class="company-info-box">
+              <img src="https://dummyimage.com/16x16/000/fff" alt="">
+              <a href="#">SIGN IN</a>
+            </div>
+            <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+            <div class="company-info-box">
+              <img src="https://dummyimage.com/16x16/000/fff" alt="">
+              <a href="#">REGISTRATION</a>
+            </div>
+            <p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+            <div class="company-info-box">
+              <a href="#">EN-USA</a>
+            </div>
+            <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+            <div class="company-info-box">
+              <img src="https://dummyimage.com/16x16/000/fff" alt="">
+              <a href="#">BASKET [0]</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-search-container">
+        <div class="header-search-inner">
+          <div class="header-search-images">
+            <img src="https://dummyimage.com/72x72/000/fff" alt="">
+            <img src="https://dummyimage.com/72x72/000/fff" alt="">
+          </div>
+          <div class="header-search-item">
+            <form action="#">
+              <input type="search" name="menu-search" id="menu-search" placeholder="SEARCH">
+              <button type="submit" class="img-button"></button>
+            </form>
+          </div>
         </div>
       </div>
       <nav role="navigation">
         <ul>
           <a href="">
             <li>
-              <button class="btn-doctors ripple" type="button" name="button">Doctores</button>
+              ABOUT MMCITE
             </li>
           </a>
           <a href="">
             <li>
-              Para clinicas y hospitales
+              PRODUCTS
             </li>
           </a>
           <a href="">
             <li>
-              <button class="btn-sign-up btn-outline bg-color-primary">
-                Registro
-              </button>
+              NEWS
             </li>
           </a>
-          <li>
-            <a href="">Iniciar sesión</a>
-          </li>
+          <a href="">
+            <li>
+              REFERENCES
+            </li>
+          </a>
+          <a href="">
+            <li>
+              MMCITE+
+            </li>
+          </a>
+          <a href="">
+            <li>
+              EGOE
+            </li>
+          </a>
+          <a href="">
+            <li>
+              RESYSTA
+            </li>
+          </a>
+          <a href="">
+            <li>
+              MMCITE SOCIAL
+            </li>
+          </a>
+          <a href="">
+            <li class="active-menu">
+              CONTACT
+            </li>
+          </a>
         </ul>
       </nav>
       <div id="nav-icon">
@@ -318,11 +382,11 @@
       </div>
     </div>
   </footer>
-  <script src="assets/scripts/ripple.js"></script>
-  <script src="assets/scripts/header.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="assets/scripts/ripple.js"></script>
+  <script src="assets/scripts/header.js"></script>
   <script type="text/javascript" src="assets/slick/slick.min.js"></script>
   <script type="text/javascript">
       $(document).ready(function(){

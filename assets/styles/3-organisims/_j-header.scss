@@ -9,18 +9,16 @@
 }
 //For the Fixed on scroll up and hidden on scroll down
 .nav-collapse {
-  top: -81px;
+  top: -176px;
   @media screen and (max-width: 992px){
     top: -61px;
   }
 }
 header.main-nav {
-  max-width: 1232px;
-  padding-right: $space-2;
-  padding-left: $space-2;
+  width: 100%;
   margin: 0 auto;
   padding-top: 0;
-  padding-bottom: $space-2;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -30,9 +28,162 @@ header.main-nav {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: auto;
     background: cyan;
+
+    .header-info-content{
+      max-width: 1232px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: auto;
+
+      .company-info{
+        display: flex;
+        flex-wrap: nowrap;
+        height: auto;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        @include tablet{
+          display: none;
+        }
+        p{
+          margin-bottom: 0;
+        }
+
+        .company-info-box{
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          height: auto;
+
+          img{
+            height: 12px;
+            margin-right: 8px;
+          }
+          a{
+            font-size: 14px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+      .company-register{
+        display: flex;
+        flex-wrap: nowrap;
+        height: auto;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        @include tablet{
+          padding-left: 24px;
+        }
+
+        p{
+          margin-bottom: 0;
+        }
+
+        .company-info-box{
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          height: auto;
+
+          img{
+            height: 14px;
+            margin-right: 8px;
+          }
+          a{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .header-search-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+    .header-search-inner{
+      max-width: 1232px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: auto;
+      padding-top: 16px;
+      padding-bottom: 16px;
+
+      .header-search-images{
+        display: flex;
+        flex-wrap: nowrap;
+        height: auto;
+        img{
+          height: 72px;
+          margin-right: 16px;
+          margin-bottom: 0;
+        }
+      }
+      .header-search-item{
+        display: flex;
+        width: 31%;
+        height: auto;
+        form{
+          width: 100%;
+          justify-content: flex-end;
+          input{
+            min-width: 10%;
+            width: 90%;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: solid 1px gray;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+          }
+          button{
+            padding-bottom: 32px;
+            padding-right: 0;
+            border-bottom: 1px solid gray;
+            border-radius: 0;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid black;
+
+    ul{
+      display: flex;
+      justify-content: space-between;
+      max-width: 1232px;
+      width: 100%;
+      padding-top: 8px;
+      padding-right: 16px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      a:hover{
+        li{
+          color: orange;
+          transition: all .25s ease-in-out;
+        }
+      }
+    }
   }
   //Responsive shit
   @media screen and (max-width: 992px){
