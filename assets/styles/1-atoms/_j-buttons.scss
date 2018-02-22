@@ -206,3 +206,27 @@ button, .btn-solid {
   width: auto;
   background-position:center;
 }
+.btn-facebook{
+  background-image: url("https://dummyimage.com/64x24/1d06c7/fff");
+  background-repeat: no-repeat;
+  height: auto;
+  width: 80px;
+  background-position: center;
+  border-radius: 4px;
+}
+.btn-twitter{
+  background-image: url(https://dummyimage.com/64x24/c70824/fff);
+  background-repeat: no-repeat;
+  height: auto;
+  width: 80px;
+  background-position: center;
+  border-radius: 4px;
+}
+.btn-google{
+  background-image: url(https://dummyimage.com/64x24/000/fff);
+  background-repeat: no-repeat;
+  height: auto;
+  width: 64px;
+  background-position: center;
+  border-radius: 4px;
+}
