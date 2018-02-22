@@ -65,7 +65,8 @@
 				<div class="header-search-container">
 					<div class="header-search-inner">
 						<div class="header-search-images">
-							<img src="https://dummyimage.com/72x72/000/fff" alt="">
+                     <a href="index.html"><img src="https://dummyimage.com/72x72/000/fff" alt=""></a>
+							
 							<img src="https://dummyimage.com/72x72/000/fff" alt="">
 						</div>
 						<div class="header-search-item">
@@ -83,8 +84,8 @@
 								ABOUT MMCITE
 							</li>
 						</a>
-						<a href="">
-							<li>
+						<a href="products.html">
+							<li class="active-menu">
 								PRODUCTS
 							</li>
 						</a>
@@ -118,8 +119,8 @@
 								MMCITE SOCIAL
 							</li>
 						</a>
-						<a href="">
-							<li class="active-menu">
+						<a href="contacto.php">
+							<li>
 								CONTACT
 							</li>
 						</a>
@@ -134,7 +135,7 @@
 		</div>
   <!--  Main content -->
   <main class="j-workspace ">
-    <div class="j-wrap">
+      <div class="j-wrap">
 			<!-- section welcome -->
 			<div class="menu-a">
             <h3><a href="index.html" class="inactive">HOME</a></h3>
@@ -214,43 +215,58 @@
 					</ul>
 					<button class="individual-btn"><img src="https://dummyimage.com/24x24/000/fff" alt=""> Add to car</button>
             </div>
-
          </section>
 			<!-- section Tab -->
 			<div class="tabs">
 				<input type="radio" name="tabs" id="tabone" checked="checked">
-				<label for="tabone">Tab One</label>
+				<label for="tabone">Description</label>
 				<div class="tab">
-				  <h1>Tab One Content</h1>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 				
 				<input type="radio" name="tabs" id="tabtwo">
-				<label for="tabtwo">Tab Two</label>
+				<label for="tabtwo">specifications</label>
 				<div class="tab">
-				  <h1>Tab Two Content</h1>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 				
 				<input type="radio" name="tabs" id="tabthree">
-				<label for="tabthree">Tab Three</label>
+				<label for="tabthree">Reviews</label>
 				<div class="tab">
-				  <h1>Tab Three Content</h1>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <input type="radio" name="tabs" id="tabfour">
+				<label for="tabfour">Downloads</label>
+				<div class="tab">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatnon proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
-			 </div>
-			
-			 <div id="fb-root"></div>
-			 <script>(function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s); js.id = id;
-				js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12';
-				fjs.parentNode.insertBefore(js, fjs);
-			 }(document, 'script', 'facebook-jssdk'));</script>
-			 <div class="fb-comments" data-href="https://www.facebook.com/enrique.santos.14019338" data-width="1200" data-numposts="5"></div>
-	</div>
+         </div>
+         
+         <!--  Section Disqus  -->
+         <div id="disqus_thread"></div>
+         <script>
+         
+         /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+         /*
+         var disqus_config = function () {
+         this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+         this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+         };
+         */
+         (function() { // DON'T EDIT BELOW THIS LINE
+         var d = document, s = d.createElement('script');
+         s.src = 'https://mmcite9-1.disqus.com/embed.js';
+         s.setAttribute('data-timestamp', +new Date());
+         (d.head || d.body).appendChild(s);
+         })();
+         </script>
+         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                     
+	   </div>
 		<!-- section banner -->
 		<section class="banner">
 			<div class="banner-content">
@@ -347,5 +363,7 @@
 		});
 	});
 </script>
+    <!-- Disqus script -->
+    <script id="dsq-count-scr" src="//mmcite9-1.disqus.com/count.js" async></script>
 </body>
 </html>

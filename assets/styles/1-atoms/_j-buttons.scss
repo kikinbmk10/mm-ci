@@ -213,6 +213,10 @@ button, .btn-solid {
   width: 80px;
   background-position: center;
   border-radius: 4px;
+  @include mobile{
+    width: 96px;
+    height: 32px;
+  }
 }
 .btn-twitter{
   background-image: url(https://dummyimage.com/64x24/c70824/fff);
@@ -221,6 +225,10 @@ button, .btn-solid {
   width: 80px;
   background-position: center;
   border-radius: 4px;
+  @include mobile{
+    width: 96px;
+    height: 32px;
+  }
 }
 .btn-google{
   background-image: url(https://dummyimage.com/64x24/000/fff);
@@ -229,4 +237,8 @@ button, .btn-solid {
   width: 64px;
   background-position: center;
   border-radius: 4px;
+  @include mobile{
+    width: 80px;
+    height: 32px;
+  }
 }

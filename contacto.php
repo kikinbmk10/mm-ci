@@ -59,7 +59,7 @@
       <div class="header-search-container">
         <div class="header-search-inner">
           <div class="header-search-images">
-            <img src="https://dummyimage.com/72x72/000/fff" alt="">
+            <a href="index.html"><img src="https://dummyimage.com/72x72/000/fff" alt=""></a>
             <img src="https://dummyimage.com/72x72/000/fff" alt="">
           </div>
           <div class="header-search-item">
@@ -77,7 +77,7 @@
               ABOUT MMCITE
             </li>
           </a>
-          <a href="">
+          <a href="products.html">
             <li>
               PRODUCTS
             </li>
