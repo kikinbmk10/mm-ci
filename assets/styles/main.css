@@ -1117,6 +1117,49 @@ img {
         align-self: center;
         margin-right: 0; } }
 
+/**
+ individual product tabs section
+ **/
+.tabs {
+  display: flex;
+  flex-wrap: wrap; }
+
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: #90CAF9;
+  font-weight: bold;
+  transition: background ease 0.2s; }
+
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff; }
+
+.tabs input[type="radio"] {
+  display: none; }
+
+.tabs input[type="radio"]:checked + label {
+  background: #fff; }
+
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block; }
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial; }
+
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem; } }
 .banner {
   position: relative;
   display: flex;
@@ -1870,7 +1913,8 @@ footer {
   width: 100%;
   height: auto;
   padding-top: 80px;
-  border-top: 1px solid black; }
+  border-top: 1px solid black;
+  margin-bottom: 40px; }
   .individual-product .carousel-container {
     display: flex;
     flex-direction: column;
@@ -1974,7 +2018,7 @@ footer {
       align-items: center;
       width: 100%;
       height: auto;
-      margin-top: 24px; }
+      margin-top: 32px; }
       .individual-product .individual-product-container .social-shares .redes-btn {
         margin-right: 56px;
         padding-left: 0; }
@@ -1983,10 +2027,68 @@ footer {
       letter-spacing: 0.045rem;
       line-height: 1.82;
       margin-top: 24px; }
+    .individual-product .individual-product-container .ul-individual-product {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 16px; }
+      .individual-product .individual-product-container .ul-individual-product li {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-bottom: 16px; }
+        .individual-product .individual-product-container .ul-individual-product li img {
+          width: auto;
+          height: 18px;
+          margin-bottom: 0;
+          margin-right: 24px; }
+        .individual-product .individual-product-container .ul-individual-product li p {
+          margin-bottom: 0; }
+    .individual-product .individual-product-container .individual-btn {
+      display: flex;
+      align-items: center;
+      align-self: flex-start;
+      max-width: 100%;
+      width: auto;
+      font-weight: bold;
+      font-size: 18px;
+      color: #fff;
+      letter-spacing: 1px;
+      padding-top: 20px;
+      padding-right: 24px;
+      padding-bottom: 18px;
+      padding-left: 24px;
+      background: red;
+      border: 1px solid red;
+      border-radius: 40px;
+      transition: all .25s ease-in-out; }
+      @media screen and (max-width: 600px) {
+        .individual-product .individual-product-container .individual-btn {
+          font-size: 13px;
+          padding-right: 16px;
+          padding-left: 16px; } }
+      .individual-product .individual-product-container .individual-btn img {
+        width: auto;
+        height: 16px;
+        margin-bottom: 0;
+        margin-right: 8px; }
 
 .availability {
   color: green;
   font-size: 14px; }
+
+.slider-nav-product {
+  margin-right: 4px;
+  margin-left: 4px;
+  opacity: 0.8;
+  border: 2px solid transparent; }
+
+.slider-nav-product:focus-within {
+  opacity: 1;
+  border: 2px solid red; }
+
+.slider-nav {
+  width: 88%;
+  align-self: center; }
 
 .contact {
   display: flex;
