@@ -955,6 +955,7 @@ img {
         padding-right: 8px; } }
     @media screen and (max-width: 600px) {
       .qualities .qualities-item {
+        width: 100%;
         flex-direction: column;
         text-align: center;
         padding-bottom: 24px; } }
@@ -998,9 +999,12 @@ img {
         padding-right: 8px; } }
     @media screen and (max-width: 600px) {
       .qualities .qualities-item-2 {
+        width: 100%;
         flex-direction: column;
         text-align: center;
-        padding-bottom: 24px; } }
+        padding-bottom: 24px;
+        border-right: none;
+        border-left: none; } }
     .qualities .qualities-item-2 img {
       height: 64px;
       margin-right: 24px;
