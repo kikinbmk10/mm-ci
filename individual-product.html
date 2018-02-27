@@ -159,9 +159,8 @@
 						<img class="slider-nav-product" src="https://dummyimage.com/400x400/7073c3/fff" alt="">
 						<img class="slider-nav-product" src="https://dummyimage.com/400x400/70c386/fff" alt="">
 						<img class="slider-nav-product" src="https://dummyimage.com/400x400/c3a270/fff" alt="">
-						<img class="slider-nav-product" src="https://dummyimage.com/400x400/be8bac/fff" alt="">
-					</div>
-				
+                  <img class="slider-nav-product" src="https://dummyimage.com/400x400/be8bac/fff" alt="">
+               </div>
             </div>
             <div class="individual-product-container">
                <div class="individual-title-content">
@@ -213,9 +212,34 @@
                      <p>Qsum quia dolor sit amet, consectetur, adupisci ve</p>
                   </li>
 					</ul>
-					<button class="individual-btn"><img src="https://dummyimage.com/24x24/000/fff" alt=""> Add to car</button>
+					<a href="#openModal" id="btn-add-car"><button class="individual-btn"><img src="https://dummyimage.com/24x24/000/fff" alt=""> Add to car</button></a>
             </div>
-         </section>
+			</section>
+			<!-- Modal section  -->
+			<section id="openModal" class="openModal">
+				<div class="modal">
+					<a href="#closeModal" class="closeModal">X</a>
+					<h2>PARK BENCHES-RIVAGE</h2>
+					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sequia consequuntur magni.</p>
+					<table>
+						<tbody>
+							<tr>
+								<th>Product</th>
+								<th class="th-description">Description</th>
+								<th>quantity</th>
+							</tr>
+							<tr>
+								<th><img src="https://dummyimage.com/80x80/000/fff" alt=""></th>
+								<th class="th-description"><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sequia consequuntur magni.</p></th>
+								<th class="th-quantity">
+									<input type="number" name="quantity-input" id="quantity-input" min="1" max="9999" value="1">
+								</th>
+							</tr>
+						</tbody>
+					</table>
+					<button id="btn-quotation">Cotizar</button>
+				</div>
+			</section>
 			<!-- section Tab -->
 			<div class="tabs">
 				<input type="radio" name="tabs" id="tabone" checked="checked">
@@ -247,22 +271,22 @@
          <!--  Section Disqus  -->
          <div id="disqus_thread"></div>
          <script>
-         
-         /**
-         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-         /*
-         var disqus_config = function () {
-         this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-         this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-         };
-         */
-         (function() { // DON'T EDIT BELOW THIS LINE
-         var d = document, s = d.createElement('script');
-         s.src = 'https://mmcite9-1.disqus.com/embed.js';
-         s.setAttribute('data-timestamp', +new Date());
-         (d.head || d.body).appendChild(s);
-         })();
+				
+				/**
+				*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+				*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+				/*
+				var disqus_config = function () {
+				this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+				this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+				};
+				*/
+				(function() { // DON'T EDIT BELOW THIS LINE
+				var d = document, s = d.createElement('script');
+				s.src = 'https://mmcite9-1.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+				})();
          </script>
          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                                      
@@ -334,11 +358,48 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="assets/scripts/ripple.js"></script>
   <script src="assets/scripts/header.js"></script>
+  <script src="assets/scripts/sweetalert2/dist/sweetalert2.all.min.js"></script>
+	 <!--Input quantity--> 
+  <script>
+	   $(document).ready(function() {
+            var product_id = $("input[name='quantity-number']");
+
+
+            $("#btn-add-car").click(function() {
+                var recibir =  $("input[name='quantity-input']");
+
+                recibir.val(product_id.val());
+               
+            });
+
+				 $("#btn-quotation").click(function() {
+						swal({
+							title: "Continuar",
+							text: "¿Qué desea hacer?",
+							type: "success",
+							showCancelButton: true,
+							confirmButtonColor: "#ec7caa",
+							cancelButtonColor: "#ec7c00",
+							confirmButtonText: "Ir a mi cotización",
+							cancelButtonText: "Cancelar cotización",
+							closeOnConfirm: false,
+							closeOnCancel: false
+						},
+						function(isConfirm){
+							if (isConfirm) {
+								parent.window.location.href="http://google.com";
+							} else {
+								parent.jQuery.fancybox.close();
+							}
+						});
+            });
+        });
+  </script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="assets/scripts/compartir.js"></script> 
   <!--  Slider de imagenes   -->
-  <script type="text/javascript" src="assets/slick/slick.min.js"></script> 
+  <script type="text/javascript" src="assets/slick/slick.js"></script> 
   <script type="text/javascript">
 	$(document).ready(function(){
 		$('.slider-for').slick({
@@ -348,18 +409,27 @@
 			infinite: false,
 			fade: true,
 			cssEase: 'ease',
-			asNavFor: '.slider-nav'
+         asNavFor: '.slider-nav'
+         
 		});
 		$('.slider-nav').slick({
 			slidesToShow: 4,
 			slidesToScroll: 1,
 			centerMode: false,
 			asNavFor: '.slider-for',
-			dots: false,
+         dots: false,
+         prevArrow:'<button type="button" class="slick-prev"><img src="https://dummyimage.com/20x32/000/fff" alt=""></button>',
+         nextArrow: '<button type="button" class="slick-next"><img src="https://dummyimage.com/20x32/000/fff" alt=""></button>',
 			arrows: true,
 			infinite: false,
 			cssEase: 'ease',
-			focusOnSelect: true
+         focusOnSelect: true,
+         responsive: [{
+            breakpoint: 600,
+            settings: {
+               arrows: false
+            }
+         }]
 		});
 	});
 </script>
