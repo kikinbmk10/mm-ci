@@ -2313,6 +2313,157 @@ footer {
   opacity: 1;
   border: 2px solid #F0481C; }
 
+.quotation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto; }
+  .quotation .h2-quotation-title {
+    font-size: 26px;
+    margin-bottom: 0; }
+  .quotation p {
+    margin-bottom: 32px; }
+  .quotation .quotation-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    max-width: 968px; }
+    @media screen and (max-width: 600px) {
+      .quotation .quotation-container table {
+        display: none; } }
+    .quotation .quotation-container table tbody tr:nth-child(odd) {
+      background-color: #fff; }
+    .quotation .quotation-container table tbody tr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border-radius: 0px;
+      border-bottom: 1px solid black;
+      border-top: 1px solid black; }
+      .quotation .quotation-container table tbody tr th {
+        color: black;
+        background-color: white; }
+        .quotation .quotation-container table tbody tr th img {
+          margin-bottom: 0; }
+      .quotation .quotation-container table tbody tr .th-description {
+        width: 60%; }
+      .quotation .quotation-container table tbody tr .th-quantity {
+        display: flex;
+        align-items: center; }
+        .quotation .quotation-container table tbody tr .th-quantity input {
+          min-width: 24px;
+          width: 56px;
+          height: auto;
+          font-size: 30px;
+          margin-bottom: 0;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          border: none; }
+    .quotation .quotation-container .quotation-table-responsive {
+      display: none; }
+      @media screen and (max-width: 600px) {
+        .quotation .quotation-container .quotation-table-responsive {
+          display: block !important; } }
+      .quotation .quotation-container .quotation-table-responsive tbody tr:nth-child(odd) {
+        background-color: #fff; }
+      .quotation .quotation-container .quotation-table-responsive tbody tr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-radius: 0px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black; }
+        .quotation .quotation-container .quotation-table-responsive tbody tr th {
+          color: black;
+          background-color: white; }
+          .quotation .quotation-container .quotation-table-responsive tbody tr th img {
+            margin-bottom: 0; }
+        .quotation .quotation-container .quotation-table-responsive tbody tr .th-description {
+          width: 100%;
+          text-align: center; }
+        .quotation .quotation-container .quotation-table-responsive tbody tr .th-quantity {
+          display: flex;
+          align-items: center; }
+          .quotation .quotation-container .quotation-table-responsive tbody tr .th-quantity input {
+            min-width: 24px;
+            width: 56px;
+            height: auto;
+            font-size: 30px;
+            margin-bottom: 0;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            border: none; }
+    .quotation .quotation-container .quotation-form-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin-top: 16px; }
+      .quotation .quotation-container .quotation-form-content .quotation-input-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto; }
+        .quotation .quotation-container .quotation-form-content .quotation-input-content label {
+          font-size: 16px; }
+        .quotation .quotation-container .quotation-form-content .quotation-input-content input {
+          width: 100%;
+          min-width: 160px;
+          height: 38px;
+          background-color: white;
+          padding: 8px;
+          margin-right: 0;
+          margin-bottom: 16px;
+          margin-left: 0;
+          border: 1px solid #d3d4d6;
+          border-radius: 4px;
+          text-align: left;
+          font-size: 16px;
+          line-height: 1;
+          box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.35);
+          -webkit-transition: border-color 400ms ease-in-out;
+          transition: border-color 400ms ease-in-out; }
+        .quotation .quotation-container .quotation-form-content .quotation-input-content textarea {
+          width: 100%;
+          min-width: 160px;
+          background-color: white;
+          padding: 8px;
+          margin-right: 0;
+          margin-bottom: 16px;
+          margin-left: 0;
+          border: 1px solid #d3d4d6;
+          border-radius: 4px;
+          text-align: left;
+          font-size: 16px;
+          line-height: 1;
+          box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.35);
+          -webkit-transition: border-color 400ms ease-in-out;
+          transition: border-color 400ms ease-in-out; }
+      .quotation .quotation-container .quotation-form-content button {
+        align-self: center;
+        max-width: 100%;
+        width: auto;
+        font-weight: bold;
+        font-size: 14px;
+        color: #F0481C;
+        letter-spacing: 1px;
+        padding-top: 16px;
+        padding-right: 24px;
+        padding-bottom: 14px;
+        padding-left: 24px;
+        margin-top: 8px;
+        background: #fff;
+        border: 1px solid #F0481C;
+        border-radius: 25px;
+        transition: all .2s ease-in-out; }
+      .quotation .quotation-container .quotation-form-content button:hover {
+        color: #fff;
+        background: #F0481C;
+        transition: all .2s ease-in-out; }
+
 .contact {
   display: flex;
   justify-content: space-between;

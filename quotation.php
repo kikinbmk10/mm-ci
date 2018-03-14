@@ -143,8 +143,73 @@
 			</div>
          <!-- section individual-product  -->
          <section class="quotation">
-            
-            
+				<h2 class="h2-quotation-title">QUOTATION</h2>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, excepturi magnam eos sequi unde, id dolorum neque animi temporibus, sapiente enim dignissimos ab iste accusamus velit repudiandae. Provident, harum reprehenderit?</p>
+            <section class="quotation-container">
+					<table>
+						<tbody>
+							<tr>
+								<th>Product</th>
+								<th class="th-description">Description</th>
+								<th>quantity</th>
+							</tr>
+							<tr>
+								<th><img src="https://dummyimage.com/80x80/000/fff" alt=""></th>
+								<th class="th-description"><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sequia consequuntur magni.</p></th>
+								<th class="th-quantity">
+									<input type="number" name="quantity-input" id="quantity-input" min="1" max="9999" value="1">
+								</th>
+							</tr>
+						</tbody>
+					</table>
+					<table class="quotation-table-responsive">
+						<tbody>
+							<tr>
+								<th>Product</th>
+							</tr>
+							<tr>
+								<th><img src="https://dummyimage.com/80x80/000/fff" alt=""></th>
+							</tr>
+							<tr>
+								<th class="th-description"><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sequia consequuntur magni.</p></th>
+							</tr>
+							<tr>
+								
+								<th>Quantity:</th>
+								<th class="th-quantity">
+									<input type="number" name="quantity-input" id="quantity-input" min="1" max="9999" value="1">
+								</th>
+							</tr>
+						</tbody>
+					</table>
+					<form action="#" method="POST" class="quotation-form-content" id="form-quotation">
+						<div class="quotation-input-content">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name">
+						</div>
+						<div class="quotation-input-content">
+							<label for="company">Company</label>
+							<input type="text" name="company" id="company">
+						</div>
+						<div class="quotation-input-content">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email">
+						</div>
+						<div class="quotation-input-content">
+							<label for="phone">Phone</label>
+							<input type="number" name="phone" id="phone">
+						</div>
+						<div class="quotation-input-content">
+							<label for="city">City</label>
+							<input type="text" name="city" id="city">
+						</div>
+						<div class="quotation-input-content">
+							<label for="comments">Comments</label>
+							<textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+						</div>
+						<button type="submit">QUOTATION</button>
+					</form>
+				</section>
 			</section>
 			                         
 	   </div>
