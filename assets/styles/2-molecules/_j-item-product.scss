@@ -2,7 +2,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 18.5%;
+   width: 24.5%;
    height: auto;
    margin-bottom: 40px;
 
@@ -12,15 +12,30 @@
    @include mobile{
       width: 48%;
    }
-
-   img{
-      width: 100%;
-      height: auto;
+   .product-img-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 240px;
+      height: 240px;
       margin-bottom: 24px;
+      @include tablet{
+         width: 224px;
+         height: 224px;
+      }
       @include mobile{
-         margin-bottom: 16px;
+         width: 136px;
+         height: 136px;
+      }
+
+      img{
+         width: auto;
+         height: auto;
+         max-height: 100%;
+         margin-bottom: 0;
       }
    }
+
    h3{
       font-size: 18px;
       text-align: center;
@@ -35,14 +50,14 @@
          width: auto;
          font-weight: bold;
          font-size: 14px;
-         color: red;
+         color: $red;
          letter-spacing: 1px;
          padding-top: 16px;
          padding-right: 24px;
          padding-bottom: 14px;
          padding-left: 24px;
          background: #fff;
-         border: 1px solid red;
+         border: 1px solid $red;
          border-radius: 25px;
          transition: all .25s ease-in-out;
          @include mobile{
@@ -53,7 +68,7 @@
       }
       button:hover{
          color: #fff;
-         background: red;
+         background: $red;
          transition: all .25s ease-in-out;
       }
    }
@@ -61,11 +76,11 @@
 .products-item-2{
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
+   align-items: center;
    width: 23%;
    height: auto;
    margin-bottom: 48px;
-   box-shadow: 0px 0px 8px 1px rgba(0,0,0,.2);
+  // box-shadow: 0px 0px 8px 1px rgba(0,0,0,.2);
 
    @include tablet{
       width: 31%;
@@ -75,20 +90,36 @@
       width: 48%;
    }
 
-   img{
-      width: 100%;
-      height: auto;
+   .product-img-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 240px;
+      height: 240px;
       margin-bottom: 24px;
-      cursor: pointer;
+      @include tablet{
+         width: 224px;
+         height: 224px;
+      }
       @include mobile{
-         margin-bottom: 16px;
+         width: 136px;
+         height: 136px;
+      }
+
+      img{
+         width: auto;
+         height: auto;
+         max-height: 100%;
+         margin-bottom: 0;
       }
    }
+
    h3{
       font-size: 18px;
+      align-self: center;
       text-align: center;
-      margin-bottom: 4px;
-      margin-left: 24px;
+      margin-bottom: 24px;
+      margin-left: 0;
       @include mobile{
          font-size: 17px;
          margin-left: 0;
@@ -100,28 +131,8 @@
          transition: all .25s ease-in-out;
       }
       a:hover{
-         color: red;
+         color: $red;
          transition: all .25s ease-in-out;
-      }
-   }
-   .stars-img{
-      width: auto;
-      height: auto;
-      margin-bottom: 0;
-      margin-left: 24px;
-      cursor: default;
-      @include mobile{
-         margin-bottom: 8px;
-         margin-left: 0;
-      }
-   }
-   p{
-      align-self: flex-end;
-      color: red;
-      margin-right: 16px;
-      @include mobile{
-         align-self: center;
-         margin-right: 0;
       }
    }
 }

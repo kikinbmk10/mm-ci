@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>MMCITE 9 | Products</title>
+  <title>MMCITE 9 | Quotation</title>
   <link rel="icon" type="image/png" href="https://dummyimage.com/64x64/000/fff" sizes="64x64">
   <link rel="icon" type="image/png" href="https://dummyimage.com/180x180/000/fff" sizes="180x180">
   <!-- [#TODO] Dont forget to update the FAVICON IMAGES in the next route -->
   <!-- <link rel="icon" type="image/png" href="assets/images/favicon-180x180.png" sizes="128x128"> -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" integrity="sha256-K3Njjl2oe0gjRteXwX01fQD5fkk9JFFBdUHy/h38ggY=" crossorigin="anonymous" rel="stylesheet">
   <link href="./assets/styles/main.css" rel="stylesheet">
+
   
   <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
@@ -19,7 +20,7 @@
 <body>
   <!--  Header  -->
 
-  	<div class="header-container">
+  		<div class="header-container">
 			<header class="main-nav">
 				<div class="header-info">
 					<div class="header-info-content">
@@ -59,7 +60,8 @@
 				<div class="header-search-container">
 					<div class="header-search-inner">
 						<div class="header-search-images">
-							<a href="index.html"><img src="https://dummyimage.com/72x72/000/fff" alt=""></a>
+                     <a href="index.html"><img src="https://dummyimage.com/72x72/000/fff" alt=""></a>
+							
 							<img src="https://dummyimage.com/72x72/000/fff" alt="">
 						</div>
 						<div class="header-search-item">
@@ -126,114 +128,26 @@
 				</div>
 			</header>
 		</div>
-  <!--  Hero -->
-  	<div class="hero-content-products">
-   	<div class="products-slick">
-			<div class="hero-product-item-1">
-				<h2 class="item-title">PRODUCTS</h2>
-			</div>
-			<div class="hero-product-item-2">
-				<h2 class="item-title">PRODUCTS</h2>
-			</div>
-			<div class="hero-product-item-3">
-				<h2 class="item-title">PRODUCTS</h2>
-			</div>
-			<div class="hero-product-item-4">
-				<h2 class="item-title">PRODUCTS</h2>
-			</div>
-     </div>
-  </div>
   <!--  Main content -->
   <main class="j-workspace ">
-    <div class="j-wrap">
+      <div class="j-wrap">
 			<!-- section welcome -->
 			<div class="menu-a">
             <h3><a href="index.html" class="inactive">HOME</a></h3>
             <p>&nbsp;&nbsp;>>&nbsp;&nbsp;</p>
-            <h3><a href="#" class="active">PRODUCTS</a></h3>
+            <h3><a href="#" class="inactive">PRODUCTS</a></h3>
+            <p>&nbsp;&nbsp;>>&nbsp;&nbsp;</p>
+            <h3><a href="#" class="inactive">PARK BENCHES-RIVAGE</a></h3>
+            <p>&nbsp;&nbsp;>>&nbsp;&nbsp;</p>
+            <h3><a href="#" class="active">QUOTATION</a></h3>
 			</div>
-			<!-- section products -->
-			<div class="products">
-				<div class="product-title">
-					<h2>FEATURED PRODUCTS</h2>
-				</div>
-				<div class="products-items-content">
-					<div class="products-item-2">
-						<div class="product-img-content">
-								<img src="https://dummyimage.com/240x240/000/fff" alt="">
-						</div>
-            <h3><a href="individual-product.html">Bus Shelters</a></h3>
-					</div>
-					<div class="products-item-2">
-						<div class="product-img-content">
-								<img src="https://dummyimage.com/540x240/000/fff" alt="">
-						</div>
-            <h3><a href="#">Bus Shelters</a></h3>
-					</div>
-					<div class="products-item-2">
-						<div class="product-img-content">
-								<img src="https://dummyimage.com/240x540/000/fff" alt="">
-						</div>
-						<h3><a href="#">Bus Shelters</a></h3>
-					</div>
-					<div class="products-item-2">
-						<div class="product-img-content">
-								<img src="https://dummyimage.com/240x240/000/fff" alt="">
-						</div>
-            <h3><a href="#">Bus Shelters</a></h3>
-					</div>
-					<div class="products-item-2">
-						<div class="product-img-content">
-								<img src="https://dummyimage.com/240x240/000/fff" alt="">
-						</div>
-            <h3><a href="#">Bus Shelters</a></h3>
-					</div>
-					<div class="products-item-2">
-						<div class="product-img-content">
-								<img src="https://dummyimage.com/240x240/000/fff" alt="">
-						</div>
-            <h3><a href="#">Bus Shelters</a></h3>
-					</div>
-					<div class="products-item-2">
-						<div class="product-img-content">
-								<img src="https://dummyimage.com/240x240/000/fff" alt="">
-						</div>
-            <h3><a href="#">Bus Shelters</a></h3>
-					</div>
-					<div class="products-item-2">
-						<div class="product-img-content">
-								<img src="https://dummyimage.com/240x240/000/fff" alt="">
-						</div>
-            <h3><a href="#">Bus Shelters</a></h3>
-					</div>
-					<div class="products-item-2">
-						<div class="product-img-content">
-								<img src="https://dummyimage.com/240x240/000/fff" alt="">
-						</div>
-            <h3><a href="#">Bus Shelters</a></h3>
-					</div>
-					<div class="products-item-2">
-						<div class="product-img-content">
-								<img src="https://dummyimage.com/240x240/000/fff" alt="">
-						</div>
-            <h3><a href="#">Bus Shelters</a></h3>
-					</div>
-					<div class="products-item-2">
-						<div class="product-img-content">
-								<img src="https://dummyimage.com/240x240/000/fff" alt="">
-						</div>
-            <h3><a href="#">Fiuntains</a></h3>
-					</div>
-					<div class="products-item-2">
-						<div class="product-img-content">
-								<img src="https://dummyimage.com/240x240/000/fff" alt="">
-						</div>
-            <h3><a href="#">Bus Shelters</a></h3>
-					</div>
-				</div>
-				<a href="#" class="products-button-bottom-2"><button>VIEW MORE PRODUCTS</button></a>
-			</div>
-		</div>
+         <!-- section individual-product  -->
+         <section class="quotation">
+            
+            
+			</section>
+			                         
+	   </div>
 		<!-- section banner -->
 		<section class="banner">
 			<div class="banner-content">
@@ -301,25 +215,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="assets/scripts/ripple.js"></script>
   <script src="assets/scripts/header.js"></script>
+  <script src="assets/scripts/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="assets/slick/slick.min.js"></script>
-  <script type="text/javascript">
-      $(document).ready(function(){
-         $('.products-slick').slick({
-            dots: true,
-            infinite: true,
-            speed: 500,
-            fade: true,
-            cssEase: 'ease',
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 1000,
-            arrows:false,
-            pauseOnHover: false,
-         });
-      });
- </script>
+  <script src="assets/scripts/compartir.js"></script> 
+
 </body>
 </html>

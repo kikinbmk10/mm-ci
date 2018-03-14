@@ -148,18 +148,18 @@
          <section class="individual-product">
             <div class="carousel-container" >
                <div class="slider-for">
-						<img src="https://dummyimage.com/400x400/000/fff" alt="">
-						<img src="https://dummyimage.com/400x400/7073c3/fff" alt="">
-						<img src="https://dummyimage.com/400x400/70c386/fff" alt="">
-						<img src="https://dummyimage.com/400x400/c3a270/fff" alt="">
-						<img src="https://dummyimage.com/400x400/be8bac/fff" alt="">
+						<img src="https://dummyimage.com/200x400/000/fff" alt="" class="img-for">
+						<img src="https://dummyimage.com/800x400/7073c3/fff" alt="" class="img-for">
+						<img src="https://dummyimage.com/200x800/70c386/fff" alt="" class="img-for">
+						<img src="https://dummyimage.com/400x400/c3a270/fff" alt="" class="img-for">
+						<img src="https://dummyimage.com/400x400/be8bac/fff" alt="" class="img-for">
 					</div>
 					<div class="slider-nav">
-						<img class="slider-nav-product" src="https://dummyimage.com/400x400/000/fff" alt="">
-						<img class="slider-nav-product" src="https://dummyimage.com/400x400/7073c3/fff" alt="">
-						<img class="slider-nav-product" src="https://dummyimage.com/400x400/70c386/fff" alt="">
-						<img class="slider-nav-product" src="https://dummyimage.com/400x400/c3a270/fff" alt="">
-                  <img class="slider-nav-product" src="https://dummyimage.com/400x400/be8bac/fff" alt="">
+						<img class="slider-nav-product img-nav" src="https://dummyimage.com/400x400/000/fff" alt="">
+						<img class="slider-nav-product img-nav" src="https://dummyimage.com/800x400/7073c3/fff" alt="">
+						<img class="slider-nav-product img-nav" src="https://dummyimage.com/400x400/70c386/fff" alt="">
+						<img class="slider-nav-product img-nav" src="https://dummyimage.com/400x400/c3a270/fff" alt="">
+                  <img class="slider-nav-product img-nav" src="https://dummyimage.com/400x400/be8bac/fff" alt="">
                </div>
             </div>
             <div class="individual-product-container">
@@ -384,13 +384,13 @@
 							cancelButtonText: "Cancelar cotización",
 							closeOnConfirm: false,
 							closeOnCancel: false
-						},
-						function(isConfirm){
-							if (isConfirm) {
-								parent.window.location.href="http://google.com";
+						}).then(result => {
+							if (result.value) {
+								parent.window.location.href="http://localhost/mm-ci/quotation.php";
 							} else {
 								parent.jQuery.fancybox.close();
 							}
+
 						});
             });
         });
